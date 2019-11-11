@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.limonadamoneyapp.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_ApontarFragment"
+            app:destination="@id/apontarFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_ConsultarFragment"
+            app:destination="@id/consultarFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/apontarFragment"
+        android:name="com.example.limonadamoneyapp.ApontarFragment"
+        android:label="Apontar Gastos"
+        tools:layout="@layout/fragment_apontar" >
+        <argument
+            android:name="person"
+            app:type="reference" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/consultarFragment"
+        android:name="com.example.limonadamoneyapp.ConsultarFragment"
+        android:label="Consultar Gastos"
+        tools:layout="@layout/fragment_consultar" >
+        <argument
+            android:name="person"
+            app:type="reference" />
+    </fragment>
+</navigation>
