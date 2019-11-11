@@ -1,6 +1,30 @@
 <resources>
     <string name="app_name">LimonadaMoneyApp</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- APONTAR FRAGMENT -->
+    <string name="spn_tipo">Informe o Tipo do gasto:</string>
+    <string-array name="tipo_gasto_array">
+        <item>-</item>
+        <item>Roupas</item>
+        <item>Alimentação</item>
+        <item>Apto</item>
+        <item>Celular</item>
+        <item>Carro / Moto / Uber</item>
+        <item>Pessoais</item>
+        <item>Cartão Crédito</item>
+        <item>Empresa</item>
+        <item>Gasolina / Alcool</item>
+        <item>Outros</item>
+    </string-array>
+
+    <!-- CONSULTAR FRAGMENT -->
+    <string name="spn_ordenar_por">Selecione o critério de exibição:</string>
+    <string-array name="tipo_ordenar_array">
+        <item>Mais atual</item>
+        <item>Mais antiga</item>
+        <item>Valor</item>
+        <item>Tipo de gasto</item>
+        <item>Descrição</item>
+    </string-array>
+
 </resources>

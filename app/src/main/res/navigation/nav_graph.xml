@@ -30,9 +30,7 @@
         android:name="com.example.limonadamoneyapp.ApontarFragment"
         android:label="Apontar Gastos"
         tools:layout="@layout/fragment_apontar" >
-        <argument
-            android:name="person"
-            app:type="reference" />
+
     </fragment>
 
     <fragment
@@ -40,8 +38,6 @@
         android:name="com.example.limonadamoneyapp.ConsultarFragment"
         android:label="Consultar Gastos"
         tools:layout="@layout/fragment_consultar" >
-        <argument
-            android:name="person"
-            app:type="reference" />
+
     </fragment>
 </navigation>

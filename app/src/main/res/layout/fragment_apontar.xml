@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApontarFragment">
+    android:background="@color/bck_color_fragment_cinza"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/txtPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="fragment-apontar-gastos" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Descrição do Gasto"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp"/>
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/edt_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrincipal"
+        tools:layout_editor_absoluteX="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Valor R$ : "
+        app:layout_constraintTop_toBottomOf="@+id/edt_descricao"
+        tools:layout_editor_absoluteX="-31dp"/>
+
+    <EditText
+        android:id="@+id/edt_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:allowUndo="false"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valor"
+        tools:numeric="decimal"
+        tools:layout_editor_absoluteX="-8dp"/>
+
+    <TextView
+        android:id="@+id/txt_tipoGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Tipo de Gasto :"
+        app:layout_constraintTop_toBottomOf="@+id/edt_valor"
+        tools:layout_editor_absoluteX="3dp"/>
+
+    <Spinner
+        android:id="@+id/spn_tipo_gasto"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/tipo_gasto_array"
+        android:spinnerMode="dialog"
+        android:prompt="@string/spn_tipo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tipoGasto"
+        tools:layout_editor_absoluteX="3dp"/>
+
+    <Button
+        android:id="@+id/btn_gravar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/button_rounded_corners"
+        android:padding="10dp"
+        android:text="Gravar Registro"
+        app:layout_constraintBottom_toTopOf="@+id/btn_apagar"
+        tools:layout_editor_absoluteX="16dp"/>
+
+    <Button
+        android:id="@+id/btn_apagar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_rounded_corners"
+        android:padding="10dp"
+        android:text="Limpar campos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp"/>
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:accessibilityLiveRegion="assertive"
+        android:text="Data do Registro"
+        app:layout_constraintTop_toBottomOf="@+id/spn_tipo_gasto"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <TextView
+        android:id="@+id/txtDataHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="- - -"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistro"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="assertive"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
