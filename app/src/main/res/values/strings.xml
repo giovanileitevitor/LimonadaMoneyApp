@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">LimonadaMoneyApp</string>
 
+    <!-- PRINCIPAL FRAGMENT -->
+    <string name="spn_periodo">Informe o Período :</string>
+    <string-array name="periodo_array">
+        <item>Acumulado</item>
+        <item>Mensal</item>
+        <item>Últimos 3 meses</item>
+        <item>Últimos 6 meses</item>
+        <item>Anual</item>
+    </string-array>
+
     <!-- APONTAR FRAGMENT -->
     <string name="spn_tipo">Informe o Tipo do gasto:</string>
     <string-array name="tipo_gasto_array">
@@ -19,6 +29,10 @@
 
     <!-- CONSULTAR FRAGMENT -->
     <string name="spn_ordenar_por">Selecione o critério de exibição:</string>
+    <string name="principal_txt_filtrar_label">Filtrar exibição por:</string>
+    <string name="home_txt_organizar_title">Organizar por:</string>
+    <string name="home_btn_apontar_gastos_title">Apontar Gastos</string>
+    <string name="home_btn_consultar_gastos_title">Consultar Gastos</string>
     <string-array name="tipo_ordenar_array">
         <item>Mais atual</item>
         <item>Mais antiga</item>
