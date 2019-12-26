@@ -1,13 +1,8 @@
-package com.example.limonadamoneyapp.utils
+package com.example.limonadaMoneyApp.utils
 
-import android.content.Context
+import android.app.Activity
 import android.icu.text.SimpleDateFormat
-import androidx.core.content.ContextCompat
-import com.example.limonadamoneyapp.R
-import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.data.BarData
-import com.github.mikephil.charting.data.BarDataSet
-import com.github.mikephil.charting.data.BarEntry
+import android.util.Log
 import java.util.*
 
 fun getDate(): String {
@@ -27,3 +22,8 @@ fun getDateTimeFull(): String {
     val sdf = SimpleDateFormat("dd / MM / YYYY - - - hh:mm:ss")
     return sdf.format(cal.time)
 }
+
+fun printLog(activity : Activity, tag: String, log : String){
+    Log.i(tag, log)
+}
+

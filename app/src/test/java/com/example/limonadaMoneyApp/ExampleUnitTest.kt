@@ -1,4 +1,4 @@
-package com.example.limonadamoneyapp
+package com.example.limonadaMoneyApp
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.limonadamoneyapp.view
+package com.example.limonadaMoneyApp.view
 
 
 import android.os.Bundle
@@ -10,12 +10,11 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
-import com.example.limonadamoneyapp.R
+import com.example.limonadaMoneyApp.R
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
-import com.github.mikephil.charting.utils.ColorTemplate
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**

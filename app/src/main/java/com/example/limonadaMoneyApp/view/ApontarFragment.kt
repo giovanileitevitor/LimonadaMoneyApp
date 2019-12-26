@@ -1,4 +1,4 @@
-package com.example.limonadamoneyapp.view
+package com.example.limonadaMoneyApp.view
 
 
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import com.example.limonadamoneyapp.R
+import com.example.limonadaMoneyApp.R
 import kotlinx.android.synthetic.main.fragment_apontar.*
 
 /**

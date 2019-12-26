@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">LimonadaMoneyApp</string>
 
+
+    <!-- Loggon Activity -->
+    <string name="label_tv_title">Credenciais</string>
+    <string name="label_tv_name">Nome</string>
+    <string name="label_tv_password">Senha</string>
+    <string name="label_btn_cancel">Cancelar</string>
+    <string name="label_btn_login">Login</string>
+    <string name="error_no_name">Erro. Nome é Obrigatório!!!</string>
+    <string name="error_no_password">Erro. Senha é Obrigatória!!!</string>
+    <string name="error_invalid_credentials">Erro: Credenciais Invalidas!!!</string>
+
     <!-- PRINCIPAL FRAGMENT -->
     <string name="spn_periodo">Informe o Período :</string>
     <string-array name="periodo_array">
@@ -40,5 +51,14 @@
         <item>Tipo de gasto</item>
         <item>Descrição</item>
     </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>

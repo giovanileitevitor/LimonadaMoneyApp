@@ -1,4 +1,4 @@
-package com.example.limonadamoneyapp.view
+package com.example.limonadaMoneyApp.view
 
 
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.limonadamoneyapp.R
+import com.example.limonadaMoneyApp.R
 
 /**
  * A simple [Fragment] subclass.
